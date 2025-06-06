@@ -19,11 +19,12 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "prepare": "husky install",
+    "prepare": "husky install || echo 'Husky not installed, skipping...",
     "lint-staged": "lint-staged"
   },
   "resolutions": {
-    "graphql": "14.7.0"
+    "graphql": "14.7.0",
+    "ajv": "^8.12.0"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -32,5 +33,8 @@
     "*.js": [
       "eslint --fix"
     ]
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }
