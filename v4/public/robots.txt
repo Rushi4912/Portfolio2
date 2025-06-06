@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://rushikeshpawar.space/sitemap-index.xml
+Host: https://rushikeshpawar.space
